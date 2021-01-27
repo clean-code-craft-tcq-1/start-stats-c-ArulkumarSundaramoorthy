@@ -31,20 +31,20 @@ struct Stats compute_statistics(const float* numberset, int setlength)
         for(temp = 0; temp < setlength; temp++)
         {
             /* Sum the Number Set */
-            sum_average += numberset[i];
+            sum_average += numberset[temp];
             /* Find Minimum Number */
-            if(s.min > numberset[i])
+            if(s.min > numberset[temp])
             {
-                s.min = numberset[i];
+                s.min = numberset[temp];
             }
             /* Find Maximum Number */
-            if(s.max < numberset[i])
+            if(s.max < numberset[temp])
             {
-                s.max = numberset[i];
+                s.max = numberset[temp];
             }
-            /* Find Average */
-            s.average = sum_average / setlength;
         }
+        /* Find Average */
+        s.average = sum_average / setlength;
     }
     /* return the Average, Min & Max */
     return s;
