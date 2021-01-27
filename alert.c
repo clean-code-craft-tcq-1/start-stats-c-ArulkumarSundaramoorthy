@@ -1,6 +1,7 @@
 /* Header Files */
 #include "alert.h"
 #include "stats.h"
+#include "math.h"
 
 /* Variables */
 int emailAlertCallCount = 0;
