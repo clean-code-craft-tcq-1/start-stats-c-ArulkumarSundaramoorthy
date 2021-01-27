@@ -3,3 +3,11 @@
 
 /* Prototypes */
 struct Stats compute_statistics(const float* numberset, int setlength);
+
+/* Variables */
+struct Stats
+{
+	float average;
+	float max;
+	float min;
+};
